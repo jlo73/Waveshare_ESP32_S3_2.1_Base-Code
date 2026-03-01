@@ -4,3 +4,9 @@ Bare bones code for Waveshare ESP32 S3 2.1" round touchscreen display for use in
 This is a minimalistic example to get you started with the Waveshare ESP32 S3 2.1" round touchscreen display in Arduino IDE with LVGL 8.4. Can be addapted to other size displays using the ST7701 display IC with CST820 touch IC. This display also has built in features such as SD-Card, gyro/accelerometer, wifi, and more. For the purposes of this stripped down code, all of the drivers for those have been removed, but are available by downloading the example code from the Waveshare Wiki.
 
 PLEASE NOTE: 'lv_conf.h' is included and should be placed in your Arduino\Libraries folder.
+
+If you wish to enable additional Montserrat font sizes, go into the lv_conf.h file, find the fonts listed, and change the '0' at the end of the font size you wish to enable to a '1'. For example: 
+
+#define LV_FONT_MONTSERRAT_18 0
+change to
+#define LV_FONT_MONTSERRAT_18 1
